@@ -1,0 +1,99 @@
+/* Goodluck, probeer zo min mogelijk html elementen vaste waardes te geven!! */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-bg-color: #0F0F0F;
+    --primary-text-color: #F5F5F5;
+    --secondary-text-color: #555555;
+    --accent-color: #05905E;
+
+    --primary-spacing: 1em;
+    --secondary-spacing: 2em;
+
+    --cursor-2-bg: #151a1f;
+
+    --cursor-2-bg-line: #1f272e;
+
+}
+
+body {
+    background-color: var(--main-bg-color);
+    font-family: arial;
+    font-style: italic;
+    color: var(--primary-text-color);
+
+    margin: 1.5em;
+}
+
+/* Mobile styling */
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.current-page {
+    color: var(--accent-color);
+    
+    &:hover {
+        transition: 0.5s ease-in-out;
+        color: var(--secondary-text-color);
+    }
+}
+
+
+.other-page {
+    color: var(--secondary-text-color);
+    transition: ease-in-out 2s;
+
+    &:hover {
+        background: linear-gradient(45deg,
+                #274fbd,
+                #01d8fd,
+                #14dfea,
+                #3fc12a,
+                #f9ac07,
+                #5406d9,
+                #e912a3,
+                #7a3bca,
+                #f9ac07,
+                #7a3bca);
+        background-size: 400% 400%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradient 5s ease infinite;
+    }
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+
+/* #region Keyframe animations */
+
+/* #endregion */
