@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    cursor: none;
 }
 
 :root {
@@ -25,12 +26,54 @@ body {
     font-family: arial;
     font-style: italic;
     color: var(--primary-text-color);
-
     margin: 1.5em;
+
+    cursor: pointer;
 }
+
+.cursor {
+    position: fixed;
+    width: 2.5em;
+    height: 2.5em;
+    border: 1px solid var(--primary-text-color);
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: .1s;
+}
+
+.cursor2 {
+    position: fixed;
+    width: 0.5em;
+    height: 0.5em;
+    border: 1px solid var(--primary-text-color);
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+
+/* .content:hover 〜 .cursor {
+    transform: translate(-50%, -50%) scale(1.5);
+    background-color: var(--primary-text-color);
+    opacity: .5;
+}
+
+.content:hover 〜 .cursor2 {
+    opacity: 0;
+} */
 
 /* Mobile styling */
 
+/* Header Styling */
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
 
 a {
     text-decoration: none;
@@ -41,13 +84,13 @@ a {
 
 .current-page {
     color: var(--accent-color);
-    
+
     &:hover {
         transition: 0.5s ease-in-out;
         color: var(--secondary-text-color);
+        
     }
 }
-
 
 .other-page {
     color: var(--secondary-text-color);
@@ -73,11 +116,9 @@ a {
 }
 
 
-header {
-    display: flex;
-    justify-content: space-between;
-}
 
+
+/* #region Keyframe animations */
 
 @keyframes gradient {
     0% {
@@ -92,8 +133,5 @@ header {
         background-position: 0 50%;
     }
 }
-
-
-/* #region Keyframe animations */
 
 /* #endregion */
