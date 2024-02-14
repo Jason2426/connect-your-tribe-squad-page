@@ -353,28 +353,20 @@ p {
     .scroll-text {
         margin: 2.5% 42%;
     }
+
+    h1 {
+        font-size: 6em;
+    }
+
+    .students {
+        gap: 4.5em;
+        margin-left: 2.5%;
+    }
+
+    .img {
+        width: 110%;
+    }
 }
-
-/* @media (min-width : 41.31em) {
-
-    .intro {
-        margin-top: 20%;
-        gap: 7.25em;
-    }
-
-    h2 {
-        font-size: 2.75em;
-    }
-
-    .second-liner {
-        margin-left: 35%;
-    }
-
-    .scroll-text {
-        margin: 10% 30%;
-    }
-
-} */
 
 
 
