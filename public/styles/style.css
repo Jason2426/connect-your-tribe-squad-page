@@ -88,7 +88,7 @@ a {
 
     &:hover {
         transition: 0.5s ease-in-out;
-        color: var(--secondary-text-color);
+        color: var(--primary-text-color);
 
     }
 }
@@ -123,11 +123,11 @@ a {
     margin-top: 30%;
     display: flex;
     flex-direction: column;
-    gap: 8em;
+    gap: 5.5em;
 }
 
 h2 {
-    font-size: 2.5em;
+    font-size: 2em;
     font-style: italic;
 }
 
@@ -139,7 +139,7 @@ h2 {
 
 .second-liner {
     text-align: right;
-    margin-left: 25%;
+    margin-left: 20%;
 }
 
 .scroll-text {
@@ -199,17 +199,182 @@ button {
 
 img {
     border-radius: 1.5em;
-    width: 175px;
-    height: 200px;
+    width: 160px;
+    height: 190px;
 }
+
 
 p {
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
     font-weight: bold;
-    font-size: 1.25em;
+    font-size: 1.20em;
     margin-top: 0.25em;
 }
+
+
+@media (min-width: 31.25em) {
+
+    .intro {
+        margin-top: 20%;
+    }
+
+    .second-liner {
+        margin-left: 30%;
+    }
+
+    .scroll-text {
+        margin: 10% 27.5%;
+    }
+
+}
+
+@media (min-width : 35.81em) {
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    .intro {
+        margin-top: 15%;
+    }
+
+    .second-liner {
+        margin-left: 35%;
+    }
+}
+
+@media (min-width : 47.18em) {
+
+    .intro {
+        margin-top: 12.5%;
+        gap: 5em;
+    }
+
+    .first-liner {
+        margin-right: 40%;
+    }
+
+    .second-liner {
+        margin-left: 50%;
+    }
+
+    .scroll-text {
+        margin: 7.5% 35%;
+    }
+}
+
+@media (min-width: 50em) {
+    h2 {
+        font-size: 2.75em;
+    }
+
+    .intro {
+        margin-top: 12.5%;
+    }
+
+    .scroll-text {
+        margin: 5% 35%;
+    }
+}
+
+@media (min-width: 57em) {
+
+    h2 {
+        font-size: 3em;
+    }
+
+    .intro {
+        margin-top: 10%;
+        gap: 4.5em
+    }
+
+    .scroll-text {
+        margin: 5% 37%;
+    }
+
+    .squad {
+        margin-top: 10%;
+    }
+
+}
+
+@media (min-width: 63.43em) {
+
+    .intro {
+        margin-top: 5%;
+    }
+
+    h2 {
+        font-size: 3.8em;
+    }
+
+    .first-liner {
+        margin-right: 40%;
+    }
+
+    .second-liner {
+        margin-left: 45%;
+    }
+
+    .scroll-text {
+        margin: 2.5% 40%;
+    }
+
+    /* Squad styling */
+
+    h1 {
+        font-size: 4.5em;
+    }
+
+    .students {
+        margin-top: 0%;
+        gap: 3em;
+    }
+
+    .student {
+        width: 20%;
+    }
+
+    img {
+        width: fit-content;
+        height: fit-content;
+    }
+
+
+
+}
+
+@media (min-width: 81em) {
+    h2 {
+        font-size: 5em;
+    }
+
+    .scroll-text {
+        margin: 2.5% 42%;
+    }
+}
+
+/* @media (min-width : 41.31em) {
+
+    .intro {
+        margin-top: 20%;
+        gap: 7.25em;
+    }
+
+    h2 {
+        font-size: 2.75em;
+    }
+
+    .second-liner {
+        margin-left: 35%;
+    }
+
+    .scroll-text {
+        margin: 10% 30%;
+    }
+
+} */
 
 
 
@@ -217,7 +382,6 @@ p {
 /* #region Keyframe animations */
 
 /* Second link gradient animation */
-
 
 @keyframes gradient {
     0% {
@@ -232,6 +396,8 @@ p {
         background-position: 0 50%;
     }
 }
+
+/* Scroll down text jumping animation */
 
 @keyframes jump {
 
