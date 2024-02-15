@@ -29,6 +29,18 @@ Gebruikte technieken voor de pagina :
 - NodeJS
 - Figma
 
+**NodeJS**
+
+Node.js is een omgeving die het mogelijk maakt om JavaScript code buiten de webbrowser uit te voeren, dus op servers.
+
+**ExpressJS**
+
+Express.js is een webframework voor Node.js, wat betekent dat het een set van hulpmiddelen en functies biedt om het bouwen van webapplicaties in Node.js te vergemakkelijken.
+
+**EJS**
+
+Met EJS kun je HTML-bestanden maken waarin je JavaScript-code kunt insluiten om dynamische inhoud te genereren. Je kunt variabelen, conditionele logica, loops en zelfs JavaScript-functies gebruiken binnen je HTML-bestanden om de gegenereerde output aan te passen op basis van de gegevens die je hebt.
+
 ## Installatie
 Bij Installatie staat stap-voor-stap beschreven hoe je de development omgeving moet inrichten om aan de repository te kunnen werken.
 
