@@ -35,7 +35,7 @@ Node.js is een omgeving die het mogelijk maakt om JavaScript code buiten de webb
 
 **ExpressJS**
 
-Express.js is een webframework voor Node.js, wat betekent dat het een set van hulpmiddelen en functies biedt om het bouwen van webapplicaties in Node.js makkelijker te maken.
+Express.js is een framework voor NodeJS, wat betekent dat het een set van hulpmiddelen en functies biedt om het bouwen van webapplicaties in NodeJS makkelijker te maken.
 
 **EJS**
 
