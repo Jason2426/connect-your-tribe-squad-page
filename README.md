@@ -27,12 +27,14 @@ Gebruikte technieken voor de pagina :
 - HTML & CSS
 - Javascript
 - NodeJS
-- 
+- Figma
 
 ## Installatie
-<!-- Bij Installatie staat stap-voor-stap beschreven hoe je de development omgeving moet inrichten om aan de repository te kunnen werken. -->
+Bij Installatie staat stap-voor-stap beschreven hoe je de development omgeving moet inrichten om aan de repository te kunnen werken.
 
 ## Gebruik
+Paar leuke animaties in de pagina verwerkt, zoek maaar.
 
 ## Bronnen
+
 
