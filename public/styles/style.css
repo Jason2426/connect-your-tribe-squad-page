@@ -1,9 +1,9 @@
-/* Goodluck, probeer zo min mogelijk html elementen vaste waardes te geven!! */
+/* Goodluck lil ah jit, probeer zo min mogelijk html elementen vaste waardes te geven!! */
 
 * {
     margin: 0;
     padding: 0;
-    cursor: none;
+    /* cursor: none; */
 }
 
 :root {
@@ -16,9 +16,10 @@
     --secondary-spacing: 2em;
 
     --cursor-2-bg: #151a1f;
-
     --cursor-2-bg-line: #1f272e;
 
+    --left-set: left;
+    --top-set: top;
 }
 
 body {
@@ -56,17 +57,8 @@ body {
     transform: translate(-50%, -50%);
 }
 
-/* .content:hover 〜 .cursor {
-    transform: translate(-50%, -50%) scale(1.5);
-    background-color: var(--primary-text-color);
-    opacity: .5;
-}
 
-.content:hover 〜 .cursor2 {
-    opacity: 0;
-} */
-
-/* Mobile styling */
+/* #region Mobile styling */
 
 /* Header Styling */
 
@@ -150,8 +142,24 @@ h2 {
     animation: jump 1.5s infinite;
 }
 
+.randomAhButton {
+    position: absolute;
+    top: 35%;
+    color: var(--secondary-text-color);
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+
+    &:hover {
+        color: var(--accent-color);
+    }
+}
+
 h1 {
     font-size: 3.1em;
+    animation: slide-in linear both;
+    animation-timeline: view();
+    animation-range: 0% 50%;
 }
 
 /* Members styling */
@@ -193,14 +201,15 @@ button {
     margin-top: 10%;
 }
 
-.student {
-    /* width: 20%; */
-}
-
-img {
+.img-student {
     border-radius: 1.5em;
     width: 160px;
     height: 190px;
+
+    &:hover {
+        transform: scale(1.05);
+        transition: .25s;
+    }
 }
 
 
@@ -211,6 +220,20 @@ p {
     font-size: 1.20em;
     margin-top: 0.25em;
 }
+
+.simple-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.20em;
+    margin-top: 0.25em;
+}
+
+ul {
+    color: #05905E;
+}
+
+/* #endregion */
 
 
 @media (min-width: 31.25em) {
@@ -276,6 +299,15 @@ p {
     .scroll-text {
         margin: 5% 35%;
     }
+
+    .img-student {
+        width: 190px;
+        height: 220px;
+    }
+
+    .randomAhButton {
+        top: 37%;
+    }
 }
 
 @media (min-width: 57em) {
@@ -295,6 +327,11 @@ p {
 
     .squad {
         margin-top: 10%;
+    }
+
+    .img-student {
+        width: 220px;
+        height: 250px;
     }
 
 }
@@ -346,6 +383,11 @@ p {
 }
 
 @media (min-width: 81em) {
+
+    a {
+        font-size: 2.5em;
+    }
+
     h2 {
         font-size: 5em;
     }
@@ -359,15 +401,24 @@ p {
     }
 
     .students {
-        gap: 4.5em;
+        gap: 4em;
         margin-left: 2.5%;
     }
 
-    .img {
-        width: 110%;
+    .img-student {
+        width: 250px;
+        height: 280px;
+    }
+
+    .randomAhButton {
+        font-size: 120%;
+        top: 46%;
+    }
+
+    p {
+        font-size: 1.5em;
     }
 }
-
 
 
 
@@ -408,6 +459,68 @@ p {
     60% {
         transform: translateY(-10px);
         color: var(--accent-color);
+    }
+}
+
+@keyframes slide-out {
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+    75% {
+        transform: translateX(-25%);
+        opacity: 0.75;
+    }
+
+    50% {
+        transform: translateX(-50%);
+        opacity: 0.5;
+    }
+
+    25% {
+        transform: translateX(-25%);
+        opacity: 0.25;
+    }
+
+    0% {
+        transform: translateX(-100%);
+        opacity: 0.1;
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+        /* Start position outside of the screen on the left */
+        opacity: 0.1;
+    }
+
+    25% {
+        transform: translateX(-75%);
+        opacity: 0.25;
+    }
+
+    50% {
+        transform: translateX(-50%);
+        opacity: 0.5;
+    }
+
+    75% {
+        transform: translateX(-25%);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+
+@keyframes scale-a-lil {
+    from {
+        scale: .5;
     }
 }
 
