@@ -24,6 +24,7 @@ app.set('views', './views')
 app.use(express.static('public'))
 
 // Maak een GET route voor de index
+// Als de website opent doe de code regel.
 app.get('/', function (request, response) {
   // Haal alle personen uit de WHOIS API op uit squad 4 en sorteer op naam van a tot z
   fetchJson(apiUrl + '/person/?filter={"squad_id":"4"}&sort=name').then((apiData) => {
@@ -35,6 +36,18 @@ app.get('/', function (request, response) {
     // persons bevat de informatie apiData
   })
 })
+
+// app.get('/homepage', function (request, response) {
+  // Haal alle personen uit de WHOIS API op uit squad 4 en sorteer op naam van a tot z
+  // fetchJson(apiUrl + '/person/?filter={"squad_id":"4"}&sort=name').then((apiData) => {
+    // apiData bevat gegevens van alle personen uit SQUAD 4 en gesorteerd op naam A-Z
+
+
+    // Render index.ejs uit de views map en geef de opgehaalde data mee als variabele, genaamd persons
+    // response.render('index', {persons: apiData.data, squads: squadData.data})
+    // persons bevat de informatie apiData
+//   })
+// })
 
 
 // Maak een POST route voor de index
