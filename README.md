@@ -29,15 +29,15 @@ Gebruikte technieken voor de pagina :
 - NodeJS
 - Figma
 
-**NodeJS**
+**Wat is NodeJS**
 
 Node.js is een omgeving die het mogelijk maakt om JavaScript code buiten de webbrowser uit te voeren, dus op servers.
 
-**ExpressJS**
+**Wat is EJS**
 
 Express.js is een framework voor NodeJS, wat betekent dat het een set van hulpmiddelen en functies biedt om het bouwen van webapplicaties in NodeJS makkelijker te maken.
 
-**EJS**
+**Wat kun je met EJS?**
 
 Met EJS kun je HTML bestanden maken waarin je JavaScript code in kunt schrijven om dynamische inhoud te genereren. Je kunt variabelen, loops en zelfs JavaScript functies gebruiken binnen je HTML bestanden om de gegenereerde output aan te passen op basis van de gegevens die je hebt.
 
