@@ -27,6 +27,7 @@ Gebruikte technieken voor de pagina :
 - HTML & CSS
 - Javascript
 - NodeJS
+- ExpressJS
 - Figma
 
 **Wat is NodeJS**
