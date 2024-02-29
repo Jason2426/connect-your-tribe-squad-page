@@ -1,9 +1,5 @@
 <%- include('./partials/head') %>
 
-  <header>
-    <a href="/" class="current-page">Members</a>
-    <a href="/homepage" class="other-page">Home</a>
-  </header>
 
   <audio id="myAudio">
     <source src="/assets/Sprinter-Remix.mp3" type="audio/mpeg">
@@ -33,7 +29,7 @@
                 <%= person.avatar %>
               <% } else { %>
                 /images/profile-img.jpeg
-          <% } %>" alt="Avatar of student" class="img-student">
+          <% } %>" alt="" class="img-student">
           <p>
             <%= person.name %>
               <p>
