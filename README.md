@@ -48,6 +48,7 @@ Bij Installatie staat stap-voor-stap beschreven hoe je de development omgeving m
 ## Gebruik
 Paar leuke animaties in de pagina verwerkt, zoek maaar.
 
-## Bronnen
+![image](https://github.com/Jason2426/connect-your-tribe-squad-page/assets/143999883/c77d00b1-b973-4a67-8973-5c2e6f7dc500)
+
 
 
