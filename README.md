@@ -35,8 +35,7 @@ Gebruikte technieken voor de pagina :
 Node.js is een omgeving die het mogelijk maakt om JavaScript code buiten de webbrowser uit te voeren, dus op servers.
 
 **Wat is EJS**
-
-Express.js is een framework voor NodeJS, wat betekent dat het een set van hulpmiddelen en functies biedt om het bouwen van webapplicaties in NodeJS makkelijker te maken.
+EJS staat voor Embedded JavaScript, en het is een templating engine voor Node.js en JavaScript die wordt gebruikt om dynamische HTML-pagina's te genereren. Met EJS kun je HTML-pagina's maken met ingebedde JavaScript-code die wordt uitgevoerd tijdens het renderen van de pagina.
 
 **Wat kun je met EJS?**
 
