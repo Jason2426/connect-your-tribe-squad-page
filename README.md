@@ -32,7 +32,7 @@ Gebruikte technieken voor de pagina :
 
 **Wat is NodeJS**
 
-Node.js is een omgeving die het mogelijk maakt om JavaScript code buiten de webbrowser uit te voeren, dus op servers.
+Node.js is een omgeving die het mogelijk maakt om JavaScript code buiten de webbrowser uit te voeren, dus op servers. Node.js word dus gebruikt voor het maken van kleine en snelle netwerkapplicaties.
 
 **Wat is EJS**
 EJS staat voor Embedded JavaScript, en het is een templating engine voor Node.js en JavaScript die wordt gebruikt om dynamische HTML-pagina's te genereren. Met EJS kun je HTML-pagina's maken met ingebedde JavaScript-code die wordt uitgevoerd tijdens het renderen van de pagina.
